@@ -38,6 +38,12 @@ Section 2 - Fundamentos React
      31) Comunicação Indireta
      32) Componente com Estado
      33) Componente Controlado
+     34) Contador #01
+     35) Contador #02
+     36) MegaSena
+     37) MegaSena
+     38) MegaSena
+     39) Conclusão do Módulo
 
 
 

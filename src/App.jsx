@@ -1,6 +1,8 @@
 import './App.css';
 import React from 'react';
 
+import MegaSena from './components/MegaSena/MegaSena'
+import Contador from './components/contador/Contador'
 import Input from './components/formulario/Input';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import DiretaPai from './components/comunicacao/DiretaPai';
@@ -27,7 +29,13 @@ export default () => {
         <div className="App">
             <h1>Fundamentos React (Arrow)</h1>
             <div className="Cards">
-                <Card titulo="#13-Componente Controlado (Input)" color="#008744">
+                <Card titulo="#15-MegaSena" color="#f77f00">
+                    <MegaSena qtd={6} />
+                </Card>
+                <Card titulo="#14-Contador" color="#c99789">
+                    <Contador numeroInicial={10} />
+                </Card>
+                <Card titulo="#13-Componente Controlado (Input)" color="#ee4035">
                     <Input></Input>
                 </Card>
                 <Card titulo="#12-Comunicação Indireta" color="#008744">
