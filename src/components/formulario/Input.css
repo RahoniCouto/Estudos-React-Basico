@@ -1,0 +1,8 @@
+.Input input {
+    font-size: 1.3rem;
+}
+
+.divInput input{
+    margin:10px;
+    border: 3px solid #7bc043;
+}

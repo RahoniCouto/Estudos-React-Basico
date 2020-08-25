@@ -1,0 +1,19 @@
+.TableProdutos {
+    width: 100%;
+}
+
+.TableProdutos th {
+    background-color: #8874a3;
+    color: #2e003e;
+    border:2px solid #2e003e;
+}
+
+.TableProdutos .par {
+    background-color: #e4dcf1;
+    
+}
+
+.TableProdutos .impar {
+    background-color: #8874a3;
+    
+}
