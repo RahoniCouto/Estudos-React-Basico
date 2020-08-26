@@ -45,6 +45,16 @@ Section 2 - Fundamentos React
      38) MegaSena
      39) Conclusão do Módulo
 
+Section 3 - Calculadora
+
+     40) Criando Projeto
+     41) Componente Calculator
+     42) Componente Button #01
+     43) Componente Display
+     44) Componente Button #02
+     45) Implementação Lógica #01
+     46) Implementação Lógica #02
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

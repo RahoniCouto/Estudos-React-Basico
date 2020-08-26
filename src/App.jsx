@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 
+import Calculadora from './components/Calculator/Calculadora/Calculadora'
 import MegaSena from './components/MegaSena/MegaSena'
 import Contador from './components/contador/Contador'
 import Input from './components/formulario/Input';
@@ -29,6 +30,9 @@ export default () => {
         <div className="App">
             <h1>Fundamentos React (Arrow)</h1>
             <div className="Cards">
+                <Card titulo="#16-Calculadora" color="#ADA996">
+                    <Calculadora />
+                </Card>
                 <Card titulo="#15-MegaSena" color="#f77f00">
                     <MegaSena qtd={6} />
                 </Card>
