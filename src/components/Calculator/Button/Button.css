@@ -33,7 +33,7 @@
 }
 
 .button.operation:active {
-    background-color: #DBDBDBcc;
+    background-color: #808080;
 }
 
 .button.operationFinal:active {
