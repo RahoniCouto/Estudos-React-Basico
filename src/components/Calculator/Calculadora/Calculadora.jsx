@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import './Calculadora.css';
 import Button from '../Button/Button';
 import Display from '../Display/Display';
@@ -35,28 +35,13 @@ export default class Calculadora extends Component {
             const currentOperation = this.state.operation
 
             const values = [ ...this.state.values]
-            
-            values[0] = () => {
-                let resultado = 0;
-                switch(currentOperation){
-                    case '+':
-                        resultado=values[0] + values[1];
-                    break;
-                    case '-':
-                        resultado=values[0] - values[1];
-                    break;
-                    case '*':
-                        resultado=values[0] * values[1];
-                    break;
-                    case '/':
-                        resultado=values[0] / values[1];
-                    break;
-                    default:
-                        resultado=0
-                }
-                return resultado
-            }
 
+            try {
+                values[0] = eval(`${values[0]} ${currentOperation} ${values[1]}`)
+            } catch(e) {
+                values[0] = this.state.values[0]
+            }
+            
             values[1] = 0
 
             this.setState({
@@ -68,7 +53,7 @@ export default class Calculadora extends Component {
             })
         }
     }
- 
+
     addDigit(n) {
         if (n === '.' && this.state.displayValue.includes('.')) {
             return
